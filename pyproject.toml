@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sga-site"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.1"
+tzdata = "^2022.2"
+
+[tool.poetry.dev-dependencies]
+python-dotenv = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
