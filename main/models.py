@@ -2,15 +2,6 @@ from django.db import models
 from datetime import date
 
 
-YEAR_IN_SCHOOL_CHOICES = [
-    ("4th", "4th Year College"),
-    ("3rd", "3th Year College"),
-    ("2nd", "2th Year College"),
-    ("1st", "1th Year College"),
-    ("12 SHS", "12 Senior High School"),
-    ("11 SHS", "11 Senior High School"),
-]
-
 
 class Person(models.Model):
     first_name = models.CharField(max_length = 69)
@@ -22,8 +13,9 @@ class Person(models.Model):
     # https://www.geeksforgeeks.org/datetimefield-django-forms/#:~:text=DateTimeField%20in%20Django%20Forms%20is,date%20and%20time%20from%20user.
     birthday = models.DateField()
 
+    # roles = ...
+
     # location?
-    # roles?
     # major?
     # minor?
     # achievements?
@@ -45,6 +37,18 @@ class Person(models.Model):
     def __str__(self):
         return self.full_name
 
+class Entity(models.Model):
+    name = models.CharField(max_length = 69)
+    description = models.TextField()
 
-class Role(models.Model):
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        abstract = True
+
+class Organization(Entity):
+    pass
+
+class Role(Entity):
     pass

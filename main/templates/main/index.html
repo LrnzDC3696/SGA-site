@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
   </head>
 
   <body>
@@ -14,16 +16,15 @@
     <p>student government association</p>
 
     <nav>
-      <ul>
-        <!-- <li><h3>Home</h3></li> -->
-        <li><h3>About Us</h3></li>
-        <li><h3>Events</h3></li>
-        <li><h3>Announcements</h3></li>
-        <!-- <li><h3>Calendar</h3></li> -->
-        <li><h3>Contact Us</h3></li>
-        <li><h3>Forums</h3></li>
-        <!-- <li><h3>Timeline</h3></li> -->
-      </ul>
+      <a href="{% url 'main:index' %}">Home</a> |
+      <a href="{% url 'main:about-sga_officials' %}">Among Us</a> |
+      <a href="{% url 'main:about' %}">About Us</a> |
+      <a href="{% url 'main:contact' %}">Contact Us</a>
+      <!-- <a href="{% url 'main:index' %}">Events</a> -->
+      <!-- <a href="{% url 'main:index' %}">News</a> -->
+      <!-- <a href="{% url 'main:index' %}">Forums</a> -->
+      <!-- <a href="">Calendar</a> -->
+      <!-- <a href="">Timeline</a> -->
       <p> search here </p>
     </nav>
 

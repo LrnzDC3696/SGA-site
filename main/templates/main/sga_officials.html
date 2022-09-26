@@ -1,0 +1,14 @@
+{% for data in SGA %}  <!-- minus one because you highlight the first one, and you put the rest in archive -->
+<h1>SGA officers of batch {{ data.batch }} </h1>
+{% for title, person in data.officers.items %}
+((( {{ person.first_name }} image here )))
+<dl>
+  <dt>{{ person.full_name }}</dt>
+  <dd>{{ title }}<dd>
+  <dd> email: {{ person.email }}</dd>
+  <dd> age: {{ person.age }}</dd>
+  <dd> description: {{ person.description }}</dd>
+</dl>
+{% endfor %}
+{% endfor %}
+
