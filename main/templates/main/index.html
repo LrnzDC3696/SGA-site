@@ -1,43 +1,76 @@
+{% extends "main/base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="{% static 'main/style.css' %}">
-  </head>
+{% block title %}
+<title>You are at the index!</title>
+{% endblock title %}
 
-  <body>
-    <p>logo here</p>
-    <h3>AiTECH SGA</h3>
-    <p>student government association</p>
+{% block body %}
 
-    <nav>
-      <a href="{% url 'main:index' %}">Home</a> |
-      <a href="{% url 'main:about-sga_officials' %}">Among Us</a> |
-      <a href="{% url 'main:about' %}">About Us</a> |
-      <a href="{% url 'main:contact' %}">Contact Us</a>
-      <!-- <a href="{% url 'main:index' %}">Events</a> -->
-      <!-- <a href="{% url 'main:index' %}">News</a> -->
-      <!-- <a href="{% url 'main:index' %}">Forums</a> -->
-      <!-- <a href="">Calendar</a> -->
-      <!-- <a href="">Timeline</a> -->
-      <p> search here </p>
-    </nav>
+<section id="showcase">
+  <div class="container">
+    <img src="{% static 'main/images/school_building.png' %}" alt="SGA-logo">
+    <h1>never gonna give you up</h1>
+    <p>never gonna let you down</p>
+  </div>
+</section>
 
-    image here student government people?
+<!-- this could be turned into a component? -->
+<section id="news">
+  <div class="container">
+    <h2> ----- news here ----- </h2>
+    <div class="box">
+      <img src="{% static 'main/images/school_building.png' %}" alt="an image">
+      <a href="/">some title</a>
+      <p><i>some date here<i></p>
+      <p>a hacker man hacced a haccer [69]</p>
+    </div>
 
-    news here
+    <div class="box">
+      <img src="{% static 'main/images/school_building.png' %}" alt="yet another image">
+      <a href="/">some title</a>
+      <p><i>some date here<i></p>
+      <p>html the haccerman total manipulatino language</p>
+    </div>
 
-    upcoming events here
+    <div class="box">
+      <img src="{% static 'main/images/school_building.png' %}" alt="a good image">
+      <a href="/">some title</a>
+      <p><i>some date here<i></p>
+      <p>who knows probably midterm exam comming soon such pain...</p>
+    </div>
 
-    <footer>
-      <p> name here </p> <p>links here</p>
-      <p>location here</p>
-      <p> contact us </p>  
-    </footer>
-  </body>
-</html>
+    <a href="{% url 'main:index' %}">Browse news</a>
+    <small>[<] [.] [.] [.] [>]</small>
+  </div>
+</section>
+
+<!-- this could be turned into a component? -->
+<section id="events">
+  <div class="container">
+    <h2> ----- upcoming events here ----- </h2>
+
+    <div class="box">
+      <h3>date</h3>
+      <small>time</small>
+      <a href="/">some title</a>
+    </div>
+
+    <div class="box">
+      <h3>date</h3>
+      <small>time</small>
+      <a href="/">some title</a>
+    </div>
+
+    <div class="box">
+      <h3>date</h3>
+      <small>time</small>
+      <a href="/">some title</a>
+    </div>
+
+    <small>[<] [.] [.] [.] [>]</small>
+    <a href="{% url 'main:index' %}">Browse all events</a>
+  </div>
+</section>
+
+{% endblock body %}

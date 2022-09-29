@@ -1,15 +1,54 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta name="keywords" content="sga schoolwebsite">
+    <meta name="author" content="Juan Dele Cruz">
+    <meta name="description" content="Student government association website">
+    {% block title %}{% endblock title %}
+    <link rel="stylesheet" href="{% static 'main/style/style.css' %}">
   </head>
 
   <body>
-    <h1>this is the index!</h1>
-    <!-- <script src="index.js"></script> -->
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="{% url 'main:index' %}">
+            <!--
+              <img src="{% static 'main/images/SGA-logo.png' %}" alt="SGA-logo">
+            -->
+            <h1>Student Government of <span class="highlight">SCHOOL</span></h1>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{% url 'main:about-sga_officials' %}">AMONG US</a></li>
+            <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+            <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
+            {# <li><a href="{% url 'main:index' %}">EVENTS (fix)</a></li> #}
+            {# <li><a href="{% url 'main:index' %}">NEWS (fix)</a></li> #}
+            {# <li><a href="{% url 'main:index' %}">Forums</a></li> #}
+            {# <li><a href="{% url 'main:index' %}">Calendar</a></li> #}
+          </ul>
+        </nav>
+        <!--
+        <input placeholder="Search (Does not work yet)"></input>
+        -->
+      </div>
+    </header>
+
+    {% block body %}{% endblock body %}
+
+    <footer>
+      <div class="container">
+        <small>this is the footer</small>
+        <p> name here </p>    <p>links here</p>
+        <p>location here</p>     <p> contact us </p>  
+      </div>
+    </footer>
   </body>
 </html>

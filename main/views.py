@@ -43,8 +43,6 @@ PERSON = {
     7: Person("12th Grade Gov, Maria","Dela Cruz"),
 }
 
-print(PERSON[1])
-
 SGA_MEMBERS = [
     {
         "batch": "2022-2023" ,
@@ -91,5 +89,5 @@ def contact(request):
 
 def sga_officials(request):
     """Lists of sga officers"""
-    context = {"SGA":SGA_MEMBERS}
+    context = {"SGA": SGA_MEMBERS}
     return render(request, "main/sga_officials.html", context = context)

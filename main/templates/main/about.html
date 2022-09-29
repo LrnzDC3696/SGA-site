@@ -1,4 +1,17 @@
-About Us! <br>
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}
+<title>You are at the about us!</title>
+{% endblock title %}
+
+{% block body %}
+About<br>
 {{ ABOUT_US }}
 <br>
-Our mission 
+<h3>campus map</h3>
+<h3>Our mission</h3>
+<h3>community</h3>
+<h3>sga plan</h3>
+<h3>timeline/phase</h3>
+{% endblock body %}

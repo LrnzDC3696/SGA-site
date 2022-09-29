@@ -1,3 +1,11 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}
+<title>You are at the sga officials</title>
+{% endblock title %}
+
+{% block body %}
 {% for data in SGA %}  <!-- minus one because you highlight the first one, and you put the rest in archive -->
 <h1>SGA officers of batch {{ data.batch }} </h1>
 {% for title, person in data.officers.items %}
@@ -11,4 +19,5 @@
 </dl>
 {% endfor %}
 {% endfor %}
+{% endblock body %}
 
