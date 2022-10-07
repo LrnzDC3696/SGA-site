@@ -1,4 +1,13 @@
+/*
+DBCFB0 - dutch white
+BFC8AD - laurel green
+90B494 - dark sea green
+718F94 - steel teal
+545775 - independence
+*/
+
 body {
+
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -9,9 +18,83 @@ body {
   background-color: beige;
 } 
 
+
+/* MISC */
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.mgn-5 {
+  margin: 5px;
+  margin-top: 0;
+}
+
+.pad-5 {
+  padding: 5px;
+  padding-top: 0;
+}
+
+.pad-10 {
+  padding: 10px;
+  padding-top: 0;
+}
+
+
+/* GRID */
+
+.grid-container {
+  display: grid;
+  gap: 6.9px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 42;
+}
+
+.grid-item {
+  background: steelblue;
+  padding 20px;
+  border: 3px solid red;
+}
+
+
+/* BOXES */
+
+.box {
+  background-color: lavender;
+  margin: 4.2px;
+  float: left;
+  box-sizing: border-box;
+  border: 2px solid slateblue;
+}
+
+.box img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 0;
+}
+
+.box p {
+  margin: 5px 0px;
+  padding: 0;
+}
+
+.box a {
+  padding-top: 0;
+  font-size: 20px;
+  color: steelblue;
+}
+
+.box a:hover {
+  text-decoration-thickness: 3px;
+}
+
+
 /* GLOBAL */
+
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
 }
@@ -71,6 +154,7 @@ header nav a:hover{
   font-weight: bold;
 }
 
+
 /* SHOWCASE */
 
 #showcase{
@@ -78,7 +162,7 @@ header nav a:hover{
   background: url(../images/school_building.png) no-repeat 0 0;
   background-size: 100%;
   text-align: center;
-  color: dark-black;
+  color: black;
 }
 
 #showcase h1{
@@ -88,4 +172,29 @@ header nav a:hover{
 
 #showcase p{
   font-size: 20px;
+}
+
+/* I dunno man */
+.button {
+  display: block;
+  width: 169px;
+  height: 25px;
+  background: lightslategrey;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.button:hover {
+  background: grey;
+}
+
+
+/* colors */
+/* bgc means BackGround Color */
+.bgc-purple{
+  background: plum;
 }

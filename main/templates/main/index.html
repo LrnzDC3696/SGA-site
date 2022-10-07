@@ -14,60 +14,73 @@
   </div>
 </section>
 
+
 <!-- this could be turned into a component? -->
 <section id="news">
   <div class="container">
-    <h2> News </h2>
-    <div class="box">
-      <img src="{% static 'main/images/school_building.png' %}" alt="an image">
-      <a href="/">some title</a>
-      <p><i>some date here<i></p>
-      <p>a hacker man hacced a haccer [69]</p>
-    </div>
+    <h2 class="center"> NEWS </h2>
+    <div class="grid-container">
+      <div class="grid-item box">
+        <img src="{% static 'main/images/school_building.png' %}" alt="an image">
+        <div class="pad-5">
+          <a href="/">some title</a>
+          <p><i>some date here</i></p>
+          <p>a hacker man hacced a haccer [69 chars only]</p>
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="{% static 'main/images/school_building.png' %}" alt="yet another image">
-      <a href="/">some title</a>
-      <p><i>some date here<i></p>
-      <p>html the haccerman total manipulatino language</p>
-    </div>
+      <div class="grid-item box">
+        <img src="{% static 'main/images/school_building.png' %}" alt="an image">
+        <div class="pad-5">
+          <a href="/">some title</a>
+          <p><i>some date here</i></p>
+          <p>a hacker man hacced a haccer [69 chars only]</p>
+        </div>
+      </div>
 
-    <div class="box">
-      <a href="/">some title</a>
-      <p><i>some date here<i></p>
-      <p>who knows probably midterm exam comming soon such pain...</p>
-    </div>
+      <div class="grid-item box">
+        <img src="{% static 'main/images/school_building.png' %}" alt="an image">
+        <div class="pad-5">
+          <a href="/">some title</a>
+          <p><i>some date here</i></p>
+          <p>a hacker man hacced a haccer [69 chars only]</p>
+        </div>
+      </div>
 
-    <a href="{% url 'main:index' %}">Browse news</a>
-    <small>[<] [.] [.] [.] [>]</small>
+    </div>
   </div>
+  <a href="{% url 'main:index' %}" class="button center">BROWSE NEWS ></a>
+  <!-- <small>[<] [.] [.] [.] [>]</small> -->
 </section>
 
 <!-- this could be turned into a component? -->
-<section id="events">
+<section id="events" class="bgc-purple">
   <div class="container">
-    <h2> ----- upcoming events here ----- </h2>
+    <h2 class="center"> UPCOMING EVENTS </h2>
+    <div class="grid-container ">
+      <div class="grid-item box pad-10">
+        <p>october 69 4200</p>
+        <p>69:69</p>
+        <p>a hacker man hacced a haccer [69 chars only]</p>
+        <a href="/">some title</a>
+      </div>
 
-    <div class="box">
-      <h3>date</h3>
-      <small>time</small>
-      <a href="/">some title</a>
+      <div class="grid-item box pad-10">
+        <p>october 69 4200</p>
+        <p>69:69</p>
+        <p>a hacker man hacced a haccer [69 chars only]</p>
+        <a href="/">some title</a>
+      </div>
+
+      <div class="grid-item box pad-10">
+        <p>october 69 4200</p>
+        <p>69:69</p>
+        <p>a hacker man hacced a haccer [69 chars only]</p>
+        <a href="/">some title</a>
+      </div>
     </div>
-
-    <div class="box">
-      <h3>date</h3>
-      <small>time</small>
-      <a href="/">some title</a>
-    </div>
-
-    <div class="box">
-      <h3>date</h3>
-      <small>time</small>
-      <a href="/">some title</a>
-    </div>
-
-    <small>[<] [.] [.] [.] [>]</small>
-    <a href="{% url 'main:index' %}">Browse all events</a>
+    <!-- <small>[<] [.] [.] [.] [>]</small> -->
+    <a href="{% url 'main:index' %}" class="button center">BROWSE EVENTS</a>
   </div>
 </section>
 
