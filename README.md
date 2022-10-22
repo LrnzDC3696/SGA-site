@@ -19,7 +19,7 @@ Then open the file using your favourite editor
  
 ```
 ### 3. Pushing:
-'''bash
+```bash
 # Save all files
 
 git add .
