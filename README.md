@@ -1,6 +1,13 @@
 # SGA-site
 Website for AiTECH Student Government Association
 
+# What is this about
+This project is for the Aitech school's SGA (kinda like student council for other country/school) to give 
+information about the members of the SGA  
+
+## Setting up Django
+
+
 ## How to Contribute:
 
 ### 1. Fork this repository
@@ -16,9 +23,13 @@ git clone {insert link here}
 ![image](https://user-images.githubusercontent.com/95162875/197341388-0b34342e-ab9a-4dd3-aecd-f220a5742ee3.png)
 
 Then open the file using your favourite editor
- 
+
+# Setup necessary stuffs
+poetry install
+
 ```
-### 3. Pushing:
+
+### 4. Pushing:
 ```bash
 # Save all files
 
