@@ -45,6 +45,8 @@ python -m pip install django
 ```
 
 ### 4. Pushing:
+After making changes push your work into your forked repository
+
 ```bash
 # Save all files
 
@@ -54,6 +56,7 @@ git add .
 
 git commit -m'{name or title relevant to the commit}'
 
+git push
 '''
 
 
