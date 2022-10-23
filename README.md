@@ -19,14 +19,29 @@ information about the members of the SGA
 ```bash
 
 # clone the repository that you forked
+
 git clone {insert link here}
+
 ![image](https://user-images.githubusercontent.com/95162875/197341388-0b34342e-ab9a-4dd3-aecd-f220a5742ee3.png)
 
 Then open the file using your favourite editor
 
 # Setup necessary stuffs
-poetry install
 
+pip install poetry
+
+or
+
+python -m pip install poetry 
+
+# Setting up django
+
+pip install django
+ 
+ or
+ 
+python -m pip install django
+ 
 ```
 
 ### 4. Pushing:
