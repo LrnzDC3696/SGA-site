@@ -21,9 +21,9 @@ information about the members of the SGA
 # clone the repository that you forked
 
 git clone {insert link here}
-
-![image](https://user-images.githubusercontent.com/95162875/197341388-0b34342e-ab9a-4dd3-aecd-f220a5742ee3.png)
-
+```
+![image](https://user-images.githubusercontent.com/95162875/197396584-6f17fdd4-a343-4e76-ac63-fdcbc750e908.png)
+```bash
 Then open the file using your favourite editor
 
 # Setup necessary stuffs
