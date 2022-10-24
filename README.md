@@ -44,6 +44,7 @@ python -m pip install django
  
 ```
 
+
 ### 4. Pushing:
 After making changes push your work into your forked repository
 
@@ -58,5 +59,12 @@ git commit -m'{name or title relevant to the commit}'
 
 git push
 '''
+```
+## Contributors
+<a href="https://github.com/abel-otegbola/clock-app/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abel-otegbola/clock-app" />
+</a> 
+
+
 
 
